@@ -1,0 +1,66 @@
+\contentsline {section}{\numberline {1}مقدمه و دید کلی از پروژه}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}گام صفر:بررسی شماتیک موجود در سیمولینک وداده های پروژه }{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}جمع بندی }{9}{subsection.1.2}%
+\contentsline {section}{\numberline {2}گام اول: استخراج فضای حالت }{9}{section.2}%
+\contentsline {section}{\numberline {3}گام دوم:استخراج معادلات دینامیکی و پیاده‌سازی مدل سیستم کنترل سطح مایع در مخزن}{14}{section.3}%
+\contentsline {section}{\numberline {4}استخراج تابع تبدیل سیستم}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}استخراج تابع تبدیل از طریق تحلیل معادلات}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}استخراج تابع تبدیل از طریق داده‌های شبیه‌سازی}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}بررسی اعتبار تابع تبدیل}{20}{subsection.4.3}%
+\contentsline {section}{\numberline {5}تحلیل حلقه باز سیستم \lr {(Open-Loop Analysis)}}{21}{section.5}%
+\contentsline {section}{\numberline {6}استخراج معادله دینامیکی سیستم}{25}{section.6}%
+\contentsline {section}{\numberline {7}تعیین نقطه کار}{26}{section.7}%
+\contentsline {section}{\numberline {8}خطی‌سازی سیستم}{26}{section.8}%
+\contentsline {section}{\numberline {9}مدل فضای حالت}{27}{section.9}%
+\contentsline {section}{\numberline {10}استخراج تابع تبدیل}{27}{section.10}%
+\contentsline {section}{\numberline {11}تحلیل پاسخ پله}{28}{section.11}%
+\contentsline {section}{\numberline {12}پارامترهای زمانی سیستم}{28}{section.12}%
+\contentsline {section}{\numberline {13}اعتبار مدل خطی}{29}{section.13}%
+\contentsline {section}{\numberline {14}مقایسه پاسخ غیرخطی به پله کوچک و بزرگ}{29}{section.14}%
+\contentsline {subsection}{\numberline {14.1}بررسی پاسخ ضربه و شیب }{32}{subsection.14.1}%
+\contentsline {section}{\numberline {15}تحلیل پاسخ‌های استاندارد سیستم}{35}{section.15}%
+\contentsline {subsection}{\numberline {15.1}تحلیل پاسخ ضربه}{35}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}تحلیل پاسخ رمپ}{37}{subsection.15.2}%
+\contentsline {section}{\numberline {16}ساختار سیستم}{38}{section.16}%
+\contentsline {subsection}{\numberline {16.1}تعیین مرتبه سیستم}{38}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}تعیین نوع سیستم (System Type)}{38}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}نتایج مربوط به نوع صفر}{39}{subsection.16.3}%
+\contentsline {section}{\numberline {17}جمع‌بندی نهایی}{39}{section.17}%
+\contentsline {section}{\numberline {18}تحلیل در حوزه فرکانس }{43}{section.18}%
+\contentsline {subsection}{\numberline {18.1}تابع تبدیل سیستم خطی‌شده}{46}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}تحلیل پایداری با معیار راث-هرویتز}{46}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}تحلیل پایداری BIBO}{46}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}تحلیل نمودار بود (Bode)}{47}{subsection.18.4}%
+\contentsline {subsubsection}{\numberline {18.4.1}تحلیل بهره}{47}{subsubsection.18.4.1}%
+\contentsline {subsubsection}{\numberline {18.4.2}تحلیل فاز}{48}{subsubsection.18.4.2}%
+\contentsline {subsubsection}{\numberline {18.4.3}حاشیه‌های پایداری}{48}{subsubsection.18.4.3}%
+\contentsline {subsection}{\numberline {18.5}تحلیل نمودار نایکوئیست (Nyquist)}{48}{subsection.18.5}%
+\contentsline {subsubsection}{\numberline {18.5.1}معیار نایکوئیست}{49}{subsubsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.6}جمع‌بندی تحلیل فرکانسی}{49}{subsection.18.6}%
+\contentsline {section}{\numberline {19}تحلیل حساسیت سیستم و شرایط بالقوه ناپایداری}{50}{section.19}%
+\contentsline {subsection}{\numberline {19.1}تابع تبدیل خطی‌شده}{50}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}تحلیل حساسیت قطب نسبت به پارامترها}{50}{subsection.19.2}%
+\contentsline {subsubsection}{\numberline {19.2.1}حساسیت نسبت به سطح مقطع مخزن $A$}{50}{subsubsection.19.2.1}%
+\contentsline {subsubsection}{\numberline {19.2.2}حساسیت نسبت به سطح مقطع خروجی $a$}{51}{subsubsection.19.2.2}%
+\contentsline {subsubsection}{\numberline {19.2.3}حساسیت نسبت به نقطه کار $h_0$}{51}{subsubsection.19.2.3}%
+\contentsline {subsection}{\numberline {19.3}شرایط بالقوه ناپایداری در مدل خطی}{51}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}تحلیل ناپایداری در مدل غیرخطی}{52}{subsection.19.4}%
+\contentsline {subsection}{\numberline {19.5}جمع‌بندی تحلیل حساسیت}{53}{subsection.19.5}%
+\contentsline {section}{\numberline {20}طراحی و تحلیل کنترل‌کننده سطح مایع (PID)}{53}{section.20}%
+\contentsline {subsection}{\numberline {20.1}اهداف کنترلی}{53}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}ساختار کنترلی و پیاده‌سازی}{53}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}طراحی گام‌به‌گام ۱: تحلیل کنترل‌کننده تناسبی (P)}{54}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}طراحی گام‌به‌گام ۲: تحلیل کنترل‌کننده تناسبی-انتگرالی (PI)}{54}{subsection.20.4}%
+\contentsline {subsection}{\numberline {20.5}طراحی گام‌به‌گام ۳: تحلیل کنترل‌کننده تناسبی-مشتق‌گیر (PD)}{55}{subsection.20.5}%
+\contentsline {subsection}{\numberline {20.6}طراحی نهایی: کنترل‌کننده PID و تحلیل پاسخ}{56}{subsection.20.6}%
+\contentsline {subsection}{\numberline {20.7}تحلیل نویز و اثر فیلتر مشتق‌گیر}{58}{subsection.20.7}%
+\contentsline {subsection}{\numberline {20.8}تحلیل مصالحه بین حذف نویز و پایداری (Trade-off)}{59}{subsection.20.8}%
+\contentsline {section}{\numberline {21}بررسی عملکرد سیستم در حضور اغتشاش (Disturbance)}{60}{section.21}%
+\contentsline {subsection}{\numberline {21.1}سناریوی تست و تغییرات در بلوک دیاگرام}{60}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}تحلیل پاسخ زمانی}{60}{subsection.21.2}%
+\contentsline {section}{\numberline {22}بررسی عملکرد سیستم در حضور نویز اندازه‌گیری (Noise)}{61}{section.22}%
+\contentsline {subsection}{\numberline {22.1}مدل‌سازی نویز سنسور}{61}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.2}تحلیل پایداری در حضور نویز}{62}{subsection.22.2}%
+\contentsline {section}{\numberline {23}تحلیل ثابت زمانی و پیشنهادات نهایی}{62}{section.23}%
+\contentsline {section}{\numberline {24}نتیجه‌گیری نهایی}{63}{section.24}%
+\contentsline {section}{\numberline {25}ضمیمه: راهنمای فایل‌های ارسالی}{63}{section.25}%

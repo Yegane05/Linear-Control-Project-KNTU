@@ -1,0 +1,323 @@
+\documentclass[10pt,xcolor=dvipsnames]{beamer}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{booktabs}
+
+
+\usetheme{Madrid}
+\usecolortheme[named=blue]{structure}
+
+
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+
+
+\graphicspath{{./}{./img/}}
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\paperwidth,ht=3ex,dp=1.5ex,leftskip=0.5cm,rightskip=0.5cm]{frametitle}
+		\usebeamerfont{frametitle}\strut\insertframetitle\strut
+	\end{beamercolorbox}
+}
+
+\title{پروژه پایانی درس کنترل خطی}
+\subtitle{طراحی کنترل‌کننده سطح مایع و تحلیل دینامیکی}
+\author{رضوان عسکری و یگانه طهماسبی}
+\institute{دانشگاه صنعتی خواجه نصیرالدین طوسی \\ استاد راهنما: دکتر تقی‌راد}
+\date{بهمن ۱۴۰۴}
+
+
+\usepackage{xepersian}
+
+
+\settextfont[Path=./, Scale=1.2]{Yas.ttf}
+\setlatintextfont[Scale=1.0]{Times New Roman}
+
+\defpersianfont\nas[Path=./, Scale=1.5]{IranNastaliq.ttf}
+
+\begin{document}
+	
+	\begin{frame}[plain,noframenumbering]
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{besm.jpg}
+	\end{frame}
+	
+	\begin{frame}
+		\titlepage
+		\centering
+		\includegraphics[width=2cm]{img/Logo.png}
+	\end{frame}
+	
+	\begin{frame}{فهرست مطالب}
+		\tableofcontents
+	\end{frame}
+	
+	\section{معرفی پروژه و مدل‌سازی}
+	
+	\begin{frame}{نمای کلی سیستم}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item \textbf{هدف:} کنترل ارتفاع سطح مایع
+					\item \textbf{ورودی:} دبی پمپ (شیر ورودی)
+					\item \textbf{خروجی:} ارتفاع آب مخزن
+					\item \textbf{چالش‌ها:} رفتار غیرخطی و اشباع شیر
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/sima.png}
+					\caption{شماتیک سیستم در سیمولینک}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{استخراج پارامترهای فیزیکی}
+		پارامترهای استخراج شده از فایل \lr{InitFcn}:
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{img/PARA.png}
+			\caption{پارامترهای سطح مقطع و شیرها}
+		\end{figure}
+		معادله دینامیکی حاکم:
+		\begin{equation}
+			A \frac{dh}{dt} = q_{in}(t) - C_d \sqrt{h(t)}
+		\end{equation}
+	\end{frame}
+	
+	\begin{frame}{اعتبار سنجی مدل خطی}
+		مقایسه مدل خطی استخراج شده با سیستم واقعی:
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.8\textwidth]{img/4.png}
+			\caption{تطابق ۶۹ درصدی به دلیل ماهیت غیرخطی}
+		\end{figure}
+	\end{frame}
+	
+	\section{تحلیل رفتار سیستم (حلقه باز)}
+	
+	\begin{frame}{رفتار در دامنه‌های بزرگ (غیرخطی)}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{img/13.png}
+			\caption{انحراف مدل خطی در پله‌های بزرگ}
+		\end{figure}
+		مدل خطی تنها در اطراف نقطه کار معتبر است.
+	\end{frame}
+	
+	\begin{frame}{پاسخ‌های استاندارد}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/15.png}
+					\caption{پاسخ ضربه}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/16.png}
+					\caption{پاسخ شیب}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	
+	\section{تحلیل در حوزه فرکانس}
+	
+	\begin{frame}{نمودار بُد (Bode)}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{img/20.png}
+			\caption{رفتار فیلتر پایین‌گذر مرتبه اول}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{نمودار نایکوئیست (Nyquist)}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{img/22.png}
+			\caption{سیستم مینیمم فاز و پایدار است}
+		\end{figure}
+	\end{frame}
+	
+	\section{طراحی کنترل‌کننده PID}
+	
+	\begin{frame}{ساختار کنترلی}
+		\begin{figure}
+			\centering
+			\includegraphics[width=1.0\textwidth]{img/PID1.png}
+			\caption{کنترل‌کننده PID با فیلتر مشتق‌گیر و اشباع}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{روند طراحی P و PI}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/p_resp.png}
+					\caption{کنترل‌کننده P (دارای خطا)}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/pi_resp.png}
+					\caption{کنترل‌کننده PI (حذف خطا)}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{نتایج نهایی PID}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\textwidth]{img/finalresp.png}
+			\caption{پاسخ نهایی با ضرایب بهینه}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{تحلیل چالش زمان نشست}
+		\begin{alertblock}{چرا زمان نشست ۸ ثانیه است؟}
+			رسیدن به زمان ۵ ثانیه با فیزیک این مخزن \textbf{غیرممکن} است.
+		\end{alertblock}
+		
+		\textbf{اثبات:} حجم آب لازم برای پر کردن تانک:
+		\begin{equation}
+			\Delta V = A \times \Delta h = 100 \times 8 = 800 \, m^3
+		\end{equation}
+		حداکثر توان پمپ (شیر ۱۰۰٪ باز): $Q_{max} = 100 \, m^3/s$
+		\begin{equation}
+			t_{min} = \frac{\Delta V}{Q_{max}} = \frac{800}{100} = \textbf{8 seconds}
+		\end{equation}
+		سیستم در حالت اشباع عملگر کار می‌کند.
+	\end{frame}
+	
+	\section{تحلیل نویز و اغتشاش}
+	
+	\begin{frame}{اثر فیلتر مشتق‌گیر ($N$)}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/valve_bad.png}
+					\caption{لرزش شیر با $N=100$}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{img/valve_good.png}
+					\caption{اصلاح شده با $N=1$}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	
+
+\begin{frame}{بررسی عملکرد در برابر اغتشاش (Disturbance)}
+	\begin{block}{سناریوی تست}
+		به منظور سنجش مقاومت سیستم در برابر عواملی مثل نشتی مخزن، یک اغتشاش پله‌ای با دامنه $-10$ در ثانیه ۳۰ به ورودی کنترلر اضافه شد.
+	\end{block}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{img/dist_sim.png}
+		\caption{نحوه اعمال اغتشاش به ورودی سیستم در محیط سیمولینک}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{تحلیل پاسخ زمانی به اغتشاش}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/dist_resp.png}
+		\caption{بازگشت سریع سیستم به نقطه کار پس از اغتشاش}
+	\end{figure}
+	
+	\textbf{تحلیل:}
+	همانطور که مشاهده می‌شود، در لحظه $t=30$ سطح آب افت می‌کند، اما کنترل‌کننده بلافاصله با افزایش فرمان شیر، سطح آب را مجدداً به ۱۰ متر باز می‌گرداند(Robustness عالی).
+\end{frame}
+	
+	\begin{frame}{پایداری در حضور نویز}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\textwidth]{img/noise_resp.png}
+			\caption{حفظ پایداری سیستم با وجود نویز سنسور}
+		\end{figure}
+	\end{frame}
+	
+	\section{نتیجه‌گیری}
+	
+	\begin{frame}{جمع‌بندی و پیشنهادات}
+		\begin{block}{نتایج کلیدی}
+			\begin{itemize}
+				\item حذف کامل خطای حالت ماندگار
+				\item پایداری کامل در حضور نویز و اغتشاش
+				\item اثبات محدودیت فیزیکی زمان نشست
+			\end{itemize}
+		\end{block}
+		
+		\textbf{پیشنهاد برای کاهش زمان نشست به ۱ ثانیه:}
+		\begin{enumerate}
+			\item کاهش سطح مقطع تانک ($A$) به نصف
+			\item استفاده از پمپ با دبی دو برابر ($200 \, m^3/s$)
+		\end{enumerate}
+	\end{frame}
+	
+	\section{منابع}
+	\begin{frame}{منابع و مراجع}
+		\begin{latin}
+			\begin{thebibliography}{9}
+				
+				\bibitem{ogata}
+				Katsuhiko Ogata.
+				\newblock \emph{Modern Control Engineering}.
+				\newblock 5th Edition, Prentice Hall, 2010.
+				
+				\bibitem{dorf}
+				Richard C. Dorf and Robert H. Bishop.
+				\newblock \emph{Modern Control Systems}.
+				\newblock 13th Edition, Pearson, 2016.
+				
+				\bibitem{matlab}
+				The MathWorks Inc.
+				\newblock \emph{MATLAB \& Simulink Documentation: Water Tank System Modeling}.
+				\newblock Natick, Massachusetts, 2024.
+				
+				\bibitem{taghirad}
+				Hamid D. Taghirad.
+				\newblock \emph{Linear Control Systems Lecture Notes}.
+				\newblock K.N. Toosi University of Technology, Faculty of Electrical Engineering, Fall 2025.
+				
+			\end{thebibliography}
+		\end{latin}
+	\end{frame}
+	
+\begin{frame}[plain]
+	\centering
+	\Huge \textbf{با تشکر از توجه شما}
+	
+	\vspace{1cm}
+	
+	\includegraphics[width=3cm]{img/qrcode.png}
+	
+	\vspace{0.2cm}
+	
+	\small \textbf{اسکن جهت مشاهده کدها و مستندات}
+	
+	\vspace{0.2cm}
+	
+	\href{https://github.com/Yegane05/Linear-Control-Project-KNTU}{\lr{\texttt{github.com/Yegane05/Linear-Control-Project-KNTU}}}
+	
+\end{frame}
+
+\end{document}

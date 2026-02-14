@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{معرفی پروژه و مدل‌سازی}{4}{0}{1}
+\beamer@sectionintoc {2}{تحلیل رفتار سیستم (حلقه باز)}{7}{0}{2}
+\beamer@sectionintoc {3}{تحلیل در حوزه فرکانس}{9}{0}{3}
+\beamer@sectionintoc {4}{طراحی کنترل‌کننده PID}{11}{0}{4}
+\beamer@sectionintoc {5}{تحلیل نویز و اغتشاش}{15}{0}{5}
+\beamer@sectionintoc {6}{نتیجه‌گیری}{19}{0}{6}
+\beamer@sectionintoc {7}{منابع}{20}{0}{7}

@@ -1,0 +1,10 @@
+\frametitle{کد متلب}
+\begin{figure}
+^^I\centering
+^^I\includegraphics[width=0.5\textwidth]{8.png}
+^^I\caption{خروجی در سیمولینک }
+^^I\label{fig:label_delkhah}
+\end{figure}
+\begin{itemize}
+^^I\item  همان طور که در تصویر بالا نیز مشخص است ارتفاع از 2 متر شروع شده و به 10 متر میرسد .
+\end{itemize}

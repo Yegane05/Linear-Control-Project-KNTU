@@ -1,0 +1,43 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces تصویر مدل سیمولینک اصلی}}{7}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces خروجی اول}}{8}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces خروجی رابط گرافیکی }}{8}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces تصویر سیمولینک دوم }}{9}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces داده های فراخوانی شده }}{10}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces داده های فراخوانی شده }}{11}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces استخراج فضای حالت }}{11}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces استخراج فضای حالت }}{12}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces استخراج فضای حالت }}{13}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces مقایسه با مدل اصلی }}{14}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces پیاده سازی معادله دینامیکی در سیمولینک }}{15}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces نتیجه خروجی و تحقق هدف پروژه }}{15}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces استخراج پارامتر های سیستم }}{17}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces شبیه سازی معادله دینامیک در سیمولینک }}{18}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces نتیجه خروجی شبیه سازی سیمولینک به ورودی پله }}{19}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces کد متلب سیستم خطی به ورودی پله }}{22}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces ادامه کد متلب برای پیدا کردن پاسخ ضربه و پارامتر های حلقه باز }}{23}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces نتیجه خروجی به ورودی پله }}{24}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces نتیجه خروجی به ورودی پله }}{25}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces نتیجه خروجی به ورودی پله }}{30}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces نتیجه خروجی به ورودی پله }}{31}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces نتیجه خروجی به ورودی پله با دامنه کوچک و بزرگ }}{32}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces کد متلب سیستم خطی از معادلات حالت استخراج شده }}{33}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces پاسخ ضربه به معادله حالت }}{34}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces پاسخ به ورودی شیب }}{35}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces کد متلب سیستم غیر خطی با استفاده از دینامیک مسیله }}{40}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces پاسخ ضربه برای معادله غیر خطی }}{41}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces پاسخ به ورودی شیب برای معادله غیر خطی دینامیک ی }}{42}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces نمودار بود برای مدل خطی شده }}{43}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces نمودار بود برای مدل خطی شده کد متلب }}{44}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces نمودار نایکوییست برای مدل خطی شده کد متلب }}{45}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces نمودار نایکوییست برای مدل خطی شده کد متلب }}{45}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces مدل بلوک دیاگرامی سیستم حلقه بسته در محیط سیمولینک}}{53}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces پاسخ سیستم با کنترل‌کننده P ($K_p=50$): وجود خطای حالت ماندگار}}{54}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces پاسخ سیستم با کنترل‌کننده PI: حذف کامل خطا}}{55}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces پاسخ سیستم با کنترل‌کننده PD ($P=50, D=15$): بهبود میرایی اما بقای خطا}}{56}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces پاسخ نهایی سیستم با کنترل‌کننده PID}}{57}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces اثر مخرب نویز بر فرمان شیر با فیلتر نامناسب ($N=100$)}}{58}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces سیگنال فرمان شیر اصلاح‌شده با فیلتر مناسب ($N=1$)}}{59}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces نحوه اعمال اغتشاش به ورودی سیستم در محیط سیمولینک}}{60}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces پاسخ سیستم به اغتشاش پله‌ای در ثانیه ۳۰ و دفع کامل اثر آن}}{61}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces افزودن نویز به مسیر فیدبک سنسور ارتفاع}}{61}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces پاسخ سیستم در حضور نویز سنسور (حفظ پایداری حول مقدار مرجع)}}{62}{figure.43}%
